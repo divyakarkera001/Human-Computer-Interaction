@@ -1,0 +1,60 @@
+<?php
+
+?>
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Chronous</title>
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<link rel="icon" type="image/ico-x" href="images/hourGlass.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"></link>
+	</head>
+	
+<body>
+	<div class="Container">
+		<div class="header">
+			<span>Chronous </span>
+		</div>
+		<div class="band"></div>
+		<div class="loginWrapper">
+			<div class="loginSubDivision">
+				<div class="msg">
+					<div class="">
+						Welcome to Chronous !
+					</div>
+					<div>
+						The best way to track your study time 
+					</div>
+				</div>
+			</div>
+				<div class="loginSubDivision">
+					<div class="loginBox">
+						<div style="font-size:20px; font-family: 'Roboto Slab', serif;font-weight: bold; margin-bottom: 10px;">Login</div>
+						<div>
+								<form method="post" action="loginCheck.php">
+									<input type="email" name="user" placeholder="yourname@email.com" required><br/>
+									<input type="password" name="pswd" placeholder="password" required><br/>
+									<div>
+										<input type="submit" value="Login" class="btn"/>										
+									</div>
+									<div class="bottomLinks">
+										<div class="remember"><input type="checkbox" name="remember" value="1" <?php if(isset($_COOKIE['remember_me'])) {echo 'checked="checked"';}?>/><span class="lft" style="padding-top:2px">Remember Me</span></div>
+										<a href="forgot_password.html" rel="forgot_password" class="blueLink">Forgot your password ?</a>
+										<div class="clr"></div>
+										<div>
+											<a class="signup" href="/join/">Sign up now</a>
+										</div>
+									</div>
+								
+								</form>
+						</div>
+					</div>
+				</div>
+				<div class="clr"></div>
+		</div>
+	</div>
+</body>
+</html>
+

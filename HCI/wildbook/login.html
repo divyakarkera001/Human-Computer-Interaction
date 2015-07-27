@@ -1,0 +1,41 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Pin-UP</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"></link>
+		<link rel="icon" type="image/ico-x" href="img/favicon.ico"/>
+	</head>
+	
+<body>
+	<div class="Container">
+		<div class="band"></div>
+		<div class="signUp"> 
+			New to <span class="pinupfont"> Wild Book </span>? ?
+			<form style="display:inline"><input type="submit" value="Register" onClick="this.form.action='createProfile.php';this.form.submit()"/></form>
+		</div>
+		<div class="loginBox">
+			<div class="logo"><img src="img/image_crops/logo.png" height="148px" width="246px"/></div>
+			<form method="post" action="loginCheck.php">
+			<!--
+			<table>
+			<tr><td>Username:</td><td><input type="text" name="user"></td></tr>
+			<tr><td>Password:</td><td><input type="password" name="pswd"></td></tr>
+			<tr><td><input type="submit" value = "Sign In"></td>
+			<td><input type="button" value="Create Profile" onClick="this.form.action='createprofile.php';this.form.submit()"></td></tr>
+			
+			</table>-->		
+				<div class="logElements">
+					<input type="email" name="user" placeholder="yourname@email.com" required>
+					<input type="password" name="pswd" placeholder="password" required>
+					<div style="text-align:right;padding-top:10px">
+						<span style="color:#a6a6a6">  </span>
+						<input type="submit" value="Login >>" class="buttonTab"/>
+					</div>
+				</div>
+				
+			</form>
+		</div>
+	</div>
+</body>
+</html>
+
